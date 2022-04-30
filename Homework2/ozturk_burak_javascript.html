@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Homework 2</title>
+    </head>
+    <body>
+		<p> I used the console to do the printing </p>
+		
+		<script>
+			function returnTrue() {
+				console.log("True called\n");
+				return true;
+			}
+			
+			// 1. How are the boolean values represented?
+			
+			console.log("True and False's representations:\n");
+			
+			var b = true;
+			console.log(`True: ${b}\n`);
+			b = !b;
+			console.log(`False: ${b}\n\n`);
+			 
+			// 2. What operators are short-circuited?
+	
+			// AND and OR: &&, ||
+	
+			console.log("\nIf operator is short-circuited, 'True called' will get printed less than two times\nelse operator is not short-circuited.\n");
+	
+			console.log("\n&&:\n");
+			true && returnTrue();
+			false && returnTrue();
+	
+			console.log("\n||:\n");
+			true || returnTrue();
+			false || returnTrue();
+	
+			console.log("\n^:\n");
+			true ^ returnTrue();
+			false ^ returnTrue();
+		</script>
+	</body>
+</html>
